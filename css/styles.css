@@ -1,0 +1,249 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+header{
+    width:100%;
+    float:left;
+}
+nav{
+    background-color: #ce0303;
+    height: 61px;
+    position: fixed;
+    width: 100%;
+}
+.top-logo{
+    float:left;
+}
+.top-logo img{
+    width: 180px;
+    float: left;
+    padding: 5px;
+}
+.menu-cart{
+    float:right;
+}
+.main-menu{
+    float:left;
+}
+.main-menu ul, .main-menu ul li{
+    float:left;
+}
+.main-menu ul a{
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 22px 10px;
+    float: left;
+}
+.cart{
+    float: left;
+    position: relative;
+    margin: 15px 0;
+}
+.cart i{
+
+    padding: 5px;
+    display: block;
+    float: left;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.cart span{
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    background: #fff;
+    padding: 5px 8px;
+    border-radius: 20px;
+    color: #ce0303;
+}
+.banner{
+    width: 100%;
+    float: left;
+    background-image: url(../images/Book-Wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    min-height: 200px;
+    margin-top: 61px;
+}
+.banner-inner{
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+.banner-inner h1{
+    font-size:34pt;
+    font-weight:100;
+    color:#ffffff;
+    margin:5px;
+}
+.banner-inner h3{
+    font-size:18pt;
+    font-weight:300;
+    color:#ffffff;
+    margin:20px;
+}
+.banner-inner a{
+    padding: 5px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ce0303;
+    border-radius: 2px;
+    font-size: 15pt;
+    font-weight: 300;
+    position: relative;
+    top: 10px;
+}
+.book-category{
+    width:100%;
+    float:left;
+}
+.book-display{
+    width: 100%;
+    padding: 5% 0;
+    box-sizing: border-box;
+    float:left;
+}
+.book-block{
+    width: 200px;
+    background-color: #ffffff;
+    float: left;
+    margin: 0 20px 30px 20px;
+    box-shadow: 0px 2px 2px #dddddd;
+}
+.book-image{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.book-info{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.book-info p{
+    width: 100%;
+    float: left;
+    font-size: 12pt;
+    font-weight: 300;
+    color: #656565;
+    margin-bottom: 10px;
+}
+.book-info button{
+    background-color:#ce0303;
+    padding:5px;
+    color:#ffffff;
+    border:0;
+    border-radius:1px;
+}
+.prod-like i{
+    padding:5px 0;
+    display:block;
+    float:left;
+    cursor:pointer;
+}
+.prod-like span{
+    padding: 5px 5px;
+    display: block;
+    float: left;
+}
+footer{
+    width:100%;
+    float:left;
+    background-color:#000000;
+}
+.footer-menu{
+    width:25%;
+    float:left;
+    padding:2% 0 5%;
+}
+.footer-menu h1{
+    display: block;
+    float: left;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14pt;
+    margin-top: 10px;
+}
+.footer-menu ul li{
+    width:100%;
+    float:left;
+}
+.footer-menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 15px 0 0;
+    float: left;
+    font-size: 11pt;
+}
+.footer-copyright{
+    width: 100%;
+    float: left;
+    padding-bottom: 5%;
+}
+.footer-copyright p{
+    text-align:center;
+    color:#ffffff;
+    font-weight: 300;
+    font-size:10pt;
+}
+.footer-copyright p a{
+    color:#ffffff;
+    text-decoration: none;
+}

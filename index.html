@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Book Shop - Book Showcase</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="js/myApp.js"></script>
+        <script src="js/myControl.js"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="http://cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body ng-app="myApp" ng-controller="myControl">
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="top-logo"><img ng-src="{{ logo }}"/></div>
+                    <div class="menu-cart">
+                        <div class="main-menu"><ul><li ng-repeat="link in menu"><a href="#">{{link}}</a></li></ul></div>
+                        <div class="cart"><i class="mdi mdi-cart-outline"></i> <span>{{cart}}</span></div>
+                    </div>
+                </div>
+            </nav>
+            <div class="banner">
+                <div class="banner-inner">
+                    <h1>{{bannerHo}}</h1>
+                    <h3>{{bannerTw}}</h3>
+                    <a href="#">Show More</a>
+                </div>
+            </div>
+        </header>
+        <div class="book-category">
+            <div class="container">
+                <div class="book-display">
+                    <div class="book-block" ng-repeat="book in books">
+                        <div class="book-image">
+                            <img ng-src="{{book.cover}}"/>
+                        </div>
+                        <div class="book-info">
+                            <p class="book-title">{{book.title}}</p>
+                            <p class="book-author">{{book.author}}</p>
+                            <p class="book-publish">{{book.published | date}}</p>
+                            <p class="price"><i class="mdi mdi-cart"></i> {{book.price | currency}}</p>
+                            <p class="prod-like"><i class="mdi mdi-thumb-up" ng-click='addlike($index)'></i><span>{{book.like}}</span><i class="mdi mdi-thumb-down" ng-click='sublike($index)'></i><span>{{book.dislike}}</span></p>
+                            <button ng-click="addCart(inc)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-menu">
+                    <h1>Company</h1>
+                    <ul><li ng-repeat="foone in footone"><a href="#">{{foone}}</a></li></ul>
+                </div>
+                <div class="footer-menu">
+                    <h1>Quick Link</h1>
+                    <ul><li ng-repeat="fotwo in foottwo"><a href="#">{{fotwo}}</a></li></ul>
+                </div>
+                <div class="footer-menu">
+                    <h1>Titles</h1>
+                    <ul><li ng-repeat="fthr in footthr"><a href="#">{{fthr}}</a></li></ul>
+                </div>
+                <div class="footer-menu">
+                    <h1>Social</h1>
+                    <ul><li ng-repeat="ffou in footfou"><a href="#">{{ffou}}</a></li></ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-copyright">
+                    <p>Copyright 2017 <a href="http://www.gookeys.net">Gookeys Templates</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
